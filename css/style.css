@@ -1,0 +1,76 @@
+*{
+	outline: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #416E87;
+}
+a{
+	text-decoration: none;
+	color: #A7CF40;
+}
+
+.header{
+	background-color: #133544;
+	max-width: 70%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	text-align: center;
+
+}
+.header__title{
+	color: #fff;
+	font-weight: normal;
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+
+.content{
+	background-color: #F2F2F2;
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	padding: 0 15px;
+
+}
+
+.repository{
+	padding: 30px 0;
+}
+.repository__name{
+	font-size: 24px;
+	transition: all 0.3s;
+}
+.repository__name:hover{
+	text-decoration: underline;
+}
+.repository__desc{
+	padding-top: 20px;
+}
+.repository__info{
+	width: 70%;
+	height: 350px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	margin-left: 40px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.tinyone{
+	background-image: url(../img/tinyone.png);
+}
+.switch{
+	background-image: url(../img/switch.png);
+}
+.forkio{
+	background-image: url(../img/forkio.png);
+}
+.escape{
+	background-image: url(../img/escape.png);
+}
+.lambda{
+	background-image: url(../img/lambda.png);
+}
