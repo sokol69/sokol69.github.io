@@ -77,18 +77,16 @@ a{
 	margin-top: 10px;
 }
 
-.tinyone{
-	background-image: url(../img/tinyone.png);
-}
-.switch{
-	background-image: url(../img/switch.png);
-}
-.forkio{
-	background-image: url(../img/forkio.png);
-}
-.escape{
-	background-image: url(../img/escape.png);
-}
-.lambda{
-	background-image: url(../img/lambda.png);
+.subtitle {
+	font-weight: normal;
+	font-size: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #A7CF40;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 70px;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 20px;
 }
