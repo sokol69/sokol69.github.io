@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!--[if IE 9]><html class="ie"><![endif]-->
+	<meta charset="UTF-8">
+	<title>Ключевые элементы</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<link rel="stylesheet" href="css/libs/normalize.css">
+	<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet"/>
+	<link type="text/css" href="css/sumoselect.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/element_slider.css">
+	<link rel="stylesheet" href="css/pop_up.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	
+</head>
+<body>
+
+	<header class="header">
+		<h1 class="header__title">Ключевые элементы</h1>
+	</header>
+
+	<div class="content">
+
+		<div class="content__item charter">
+			<h2 class="charter__title">Селекты</h2>
+			<div class="charter__text">
+				<p class="charter__paragraph">Для реализации кастомных селектов мы используем плагин "JScrollPane"</p>
+				<h3 class="charter__subtitle">Со скроллом</h3>
+				<div class="select-wrap">
+					<select class="js-select select">
+						<option disabled="disabled" selected>Выберите раздел</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+					</select>
+				</div>
+
+				<h3 class="charter__subtitle">Без скролла</h3>
+				<div class="select-wrap">
+					<select class="js-select select">
+						<option disabled="disabled" selected>Сортировать по</option>
+						<option>Цене</option>
+						<option>Популярности</option>
+						<option>Производителю</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<div class="content__item charter">
+			<h2 class="charter__title">Слайдер</h2>
+			<div class="charter__text">
+				<p class="charter__paragraph">Для реализации слайдера мы используем плагин "SlickSlider"</p>
+				<ul class="js-slider__list slider__list">
+					<li class="slider__item">
+						<img src="img/slide-1.jpg" alt="Slide" class="slider__img">
+					</li>
+					<li class="slider__item">
+						<img src="img/slide-2.jpg" alt="Slide" class="slider__img">
+					</li>
+					<li class="slider__item">
+						<img src="img/slide-3.jpg" alt="Slide" class="slider__img">
+					</li>
+					<li class="slider__item">
+						<img src="img/slide-4.jpg" alt="Slide" class="slider__img">
+					</li>
+					<li class="slider__item">
+						<img src="img/slide-5.jpg" alt="Slide" class="slider__img">
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="content__item charter">
+			<h2 class="charter__title">Табы</h2>
+			<p class="charter__paragraph">Для реализации табов мы используем библиотеку "JQuery"</p>
+			<div class="charter__text">
+				<div class="tabs-wrapper">
+					<div class="tabs js-tabs">
+						<div class="exampleTab__choose">
+							<span class="exampleTab__pick">Выберете технологию:</span>
+							<span class="exampleTab__mobileSelect js-mobile-tab-link"></span>
+							<div class="exampleTab__tabs js-mobiletabs">
+							<a href="javascript:void(0);" data-href="elem1" class="js-tab-link exampleTab__tab">HTML</a>
+							<a href="javascript:void(0);" data-href="elem2" class="js-tab-link exampleTab__tab">CSS</a>
+							<a href="javascript:void(0);" data-href="elem3" class="js-tab-link exampleTab__tab">JavaScript</a>
+							<a href="javascript:void(0);" data-href="elem4" class="js-tab-link exampleTab__tab">PHP</a>
+							<a href="javascript:void(0);" data-href="elem5" class="js-tab-link exampleTab__tab">MYSQL</a>
+							</div>
+						</div>
+						<div class="exampleTab__tabblock">
+							<div class="exampleTab__item js-tab__elem1 hidden-block js-tab">
+								HTML (HyperText Markup Language — «язык гипертекстовой разметки») — стандартизированный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML).
+							</div>
+							<div class="exampleTab__item js-tab__elem2 hidden-block js-tab">
+								CSS (Cascading Style Sheets — каскадные таблицы стилей) — формальный язык описания внешнего вида документа, написанного с использованием языка разметки.
+							</div>
+							<div class="exampleTab__item js-tab__elem3 hidden-block js-tab">
+								JavaScript — мультипарадигменный язык программирования. Поддерживает объектно-ориентированный, императивный и функциональный стили. Является реализацией языка ECMAScript (стандарт ECMA-262).
+							</div>
+							<div class="exampleTab__item js-tab__elem4 hidden-block js-tab">
+								PHP (PHP: Hypertext Preprocessor — «PHP: препроцессор гипертекста»; первоначально Personal Home Page Tools — «Инструменты для создания персональных веб-страниц») — скриптовый язык общего назначения, интенсивно применяемый для разработки веб-приложений.
+							</div>
+							<div class="exampleTab__item js-tab__elem5 hidden-block js-tab">
+								MySQL — свободная реляционная система управления базами данных. Разработку и поддержку MySQL осуществляет корпорация Oracle, получившая права на торговую марку вместе с поглощённой Sun Microsystems, которая ранее приобрела шведскую компанию MySQL AB. Продукт распространяется как под GNU General Public License, так и под собственной коммерческой лицензией. Помимо этого, разработчики создают функциональность по заказу лицензионных пользователей. Именно благодаря такому заказу почти в самых ранних версиях появился механизм репликации.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content__item charter">
+			<h2 class="charter__title">Подсказки на элементы</h2>
+			<div class="charter__text">
+				<p class="charter__paragraph">Всплывающие подсказки можно реализовать двумя способами:</p>
+				<ol class="list">
+					<li class="list__item">Через дата атрибут. Записываем в <span class="word--red">data-tooltip="example"</span> нужную информацию и показываем через псевдоэлементы <span class="word--red">::before, ::after</span>.
+						<main>
+							<div>
+								<span tooltip="I'm up above it!">Up</span>
+							</div>
+							<div>
+								<span tooltip="Slide to the left" flow="left">Left</span>
+								<span tooltip="Slide to the right" flow="right">Right</span>
+							</div>
+							<div>
+								<span tooltip="Get Down." flow="down">Down</span>
+							</div>
+						</main>
+					</li>
+					<li class="list__item">Создаем один блок с информацией и подсказкой и с помощью опасити скрываем подсказку и при наведении показываем.
+						<script async src="https://jsfiddle.net/skuxvdde/1/embed/html,css,result/dark/"></script>
+					</li>
+				</ol>
+				
+			</div>
+		</div>
+
+		<div class="content__item charter">
+			<h2 class="charter__title">Паралакс эффект</h2>
+			<div class="charter__text">
+				<p class="charter__paragraph">
+					Реализовать параллакс эффект на странице можно при помощи одного из следующих плагинов:
+				</p>
+				<ul class="list">
+					<li class="list__item"><a href="https://github.com/bobbravo2/jQuery-Parallax-Slider">jQuery Parallax Image Slider</a></li>
+					<li class="list__item"><a href="http://www.stevefenton.co.uk/cmsfiles/assets/File/imageparallax.html">jQuery Image Parallax by Steve Fenton</a></li>
+					<li class="list__item"><a href="http://jonraasch.com/blog/scrolling-parallax-jquery-plugin">crolling Parallax: A jQuery Plugin by John Raasch</a></li>
+					<li class="list__item"><a href="http://johnpolacek.github.com/scrollorama/">Scrollorama by John Polacek</a></li>
+					<li class="list__item"><a href="http://johnpolacek.github.com/scrolldeck.js/">Scrolldeck by John Polacek</a></li>
+					<li class="list__item"><a href="http://webdev.stephband.info/parallax.html">jParallax </a></li>
+					<li class="list__item"><a href="http://markdalgleish.com/projects/stellar.js/">Stellar.js by Mark Dalgleish</a></li>
+					<li class="list__item"><a href="http://joelb.me/scrollpath/">jQuery Scroll Path by Joel Besada</a></li>
+					<li class="list__item"><a href="http://curtain.victorcoulon.fr/#intro">Curtain.js by Victor Coulon</a></li>
+					<li class="list__item"><a href="http://www.cameronmcefee.com/plax/">Plax by Cameron McEfee</a></li>
+				</ul>
+				<p class="charter__paragraph">
+					Также данный эффект можно сделать на чистом CSS:
+				</p>
+				<script async src="https://jsfiddle.net/6qmL6r1r/embed/html,css,result/dark/"></script>
+			</div>
+		</div>
+
+		<div class="content__item charter">
+			<h2 class="charter__title">Базовые эффекты</h2>
+			<div class="charter__text">
+				<h3 class="charter__subtitle">CSS3-переходы (Transition)</h3>
+				<p class="charter__paragraph">CSS3-переходы позволяют анимировать исходное значение CSS-свойства на новое значение с течением времени, управляя скоростью смены значений свойств. Большинство свойств меняют свои значения за 16 миллисекунд, поэтому рекомендуемое время стандартного перехода — <span class="word--red">200ms</span>.</p>
+				<p class="charter__paragraph">Смена свойств происходит при наступлении определенного события, которое описывается соответствующим псевдоклассом. Чаще всего используется псевдокласс <span class="word--red">:hover</span>. Данный псевдокласс не работает на мобильных устройствах, таких как iPhone или Android. Универсальным решением, работающим в настольных и мобильных браузерах, будет обработка событий с помощью JavaScript (например, переключение классов при клике).</p>
+				<p class="charter__paragraph">Переходы применяются ко всем элементам, а также к псевдоэлементам <span class="word--red">:before</span> и <span class="word--red">:after</span>. Для задания всех свойств перехода обычно используют краткую запись свойства   <span class="word--red">transition</span>.</p>
+				<script async src="https://jsfiddle.net/afwvyvx9/6/embed/html,css,result/dark/"></script>
+			</div>
+			<div class="charter__text">
+				<h3 class="charter__subtitle">CSS3-фильтры</h3>
+				<p class="charter__paragraph">CSS3-фильтры воспроизводят в браузере визуальные эффекты, похожие на фильтры Photoshop. Фильтры можно добавлять не только к изображениям, но и к любым непустым элементам.</p>
+				<p class="charter__paragraph">Набор фильтров не ограничивается предустановленным в браузере. Вы также можете использовать фильтры SVG, загрузив их по ссылке вместе с элементом svg.</p>
+				<p class="charter__paragraph">Изначально фильтры были созданы как часть спецификации SVG. Их задачей было применение эффектов, основанных на пиксельной сетке к векторной графике. С поддержкой SVG браузерами появилась возможность использовать эти эффекты непосредственно в браузерах.</p>
+				<p class="charter__paragraph">Браузеры обрабатывают страницу попиксельно применяя заданные эффекты и отрисовывают результат поверх оригинала. Таким образом, применяя несколько фильтров можно достигать различных эффектов, они как бы накладываются друг на друга. Чем больше фильтров, тем больше времени требуется браузеру, чтобы отрисовать страницу.</p>
+				<p class="charter__paragraph">Можно применять несколько фильтров одновременно. Классический способ применения таких эффектов — при наведении на элемент <span class="word--red">:hover</span>.</p>
+
+				<table>
+					<tr>
+						<th class="th--1st">Значения</th>
+						<th>filter</th>
+					</tr>
+					<tr>
+						<td class="word--red">blur()</td>
+						<td>
+							<p>Значение задается в единицах длины, например px, em. Применяет размытие по Гауссу к исходному изображению. Чем больше значение радиуса, тем больше размытие. Если значение радиуса не задано, по умолчанию берется 0.</p>
+							<p class="table__syntax">Синтаксис:</p>
+							<p class="word--red">filter: blur(3px);</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="word--red">brightness()</td>
+						<td>
+							<p>Значение задается в % или в десятичных дробях. Изменяет яркость изображения. Чем больше значение, тем ярче изображение. Значение по умолчанию 1.</p>
+							<p class="table__syntax">Синтаксис:</p>
+							<p class="word--red">filter: brightness(50%);</p>
+							<p class="word--red">filter: brightness(.5);</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="word--red">contrast()</td>
+						<td>
+							<p>Значение задается в % или в десятичных дробях. Регулирует контрастность изображения, т.е. разницу между самыми темными и самыми светлыми участками изображения/фона. Значение по умолчанию 100%. Нулевое значение скроет исходное изображение под темно-серым фоном. Значения, увеличивающиеся от 0 до 100% или от 0 до 1, будут постепенно открывать исходное изображение до оригинального отображения, а значения свыше будут увеличивать контраст между светлыми и темными участками.</p>
+							<p class="table__syntax">Синтаксис:</p>
+							<p class="word--red">filter: contrast(20%);</p>
+							<p class="word--red">filter: contrast(.2);</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="word--red">drop-shadow()</td>
+						<td>
+							<p>Фильтр действует подобно свойствам box-shadow и text-shadow. Использует следующие значения: смещение по оси Х смещение по оси Y размытость растяжение цвет тени. Отличительная особенность фильтра заключается в том, что тень добавляется к элементам и его содержимому с учетом их прозрачности, т.е. если элемент содержит текст внутри, то фильтр добавит тень одновременно для текста и видимых границ блока. В отличие от других фильтров, для этого фильтра обязательно задание параметров (минимальное - величина смещения).</p>
+							<p class="table__syntax">Синтаксис:</p>
+							<p class="word--red">filter: drop-shadow(2px 3px 5px black);</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="word--red">grayscale()</td>
+						<td>
+							<p>Извлекает все цвета из картинки, делая на выходе черно-белое изображение. Значение задается в % или десятичных дробях. Чем больше значение, тем сильнее эффект.</p>
+							<p class="table__syntax">Синтаксис:</p>
+							<p class="word--red">filter: grayscale(.5);</p>
+							<p class="word--red">filter: grayscale(50%);</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="word--red">hue-rotate()</td>
+						<td>
+							<p>Меняет цвета изображения в зависимости от заданного угла поворота в цветовом круге. Значение задается в градусах от 0deg до 360deg. 0deg - значение по умолчанию, означает отсутствие эффекта.</p>
+							<p class="table__syntax">Синтаксис:</p>
+							<p class="word--red">filter: hue-rotate(180deg);</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="word--red">invert()</td>
+						<td>
+							<p>Фильтр делает негатив изображения. Значение задается в %. 0% не применяет фильтр, 100% полностью преобразует цвета.</p>
+							<p class="table__syntax">Синтаксис:</p>
+							<p class="word--red">filter: invert(100%);</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="word--red">opacity()</td>
+						<td>
+							<p>Фильтр работает аналогично со свойством opacity, добавляя прозрачность элементу. Отличительная особенность - браузеры обеспечивают аппаратное ускорение для фильтра, что позволяет повысить производительность. Дополнительный бонус - фильтр можно одновременно сочетать с другими фильтрами, создавая при этом интересные эффекты. Значение задается только в %, 0% делает элемент полностью прозрачным, а 100% не оказывает никакого эффекта.</p>
+							<p class="table__syntax">Синтаксис:</p>
+							<p class="word--red">filter: opacity(30%);</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="word--red">saturate()</td>
+						<td>
+							<p>Управляет насыщенностью цветов, работая по принципу контрастного фильтра. Значение 0% убирает цветность, а 100% не оказывает никакого эффекта. Значения от 0% до 100% уменьшают насыщенность цвета, выше 100% - увеличивают насыщенность цвета. Значение может задаваться как в %, так и целым числом, 1 эквивалентно 100%.</p>
+							<p class="table__syntax">Синтаксис:</p>
+							<p class="word--red">filter: saturate(300%);</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="word--red">sepia()</td>
+						<td>
+							<p>Эффект, имитирующий старину и «ретро». Значение 0% не изменяет внешний вид элемента, а 100% полностью воспроизводит эффект сепии.</p>
+							<p class="table__syntax">Синтаксис:</p>
+							<p class="word--red">filter: sepia(150%);</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="word--red">url()</td>
+						<td>
+							<p>Функция принимает расположение внешнего XML-файла с svg-фильтром, или якорь к фильтру, находящемся в текущем документе.</p>
+							<p class="table__syntax">Синтаксис:</p>
+							<p class="word--red">filter: url(#filterId); /* если фильтр находится в этом документе */</p>
+							<p class="word--red">filter: url(filter.svg#filterId); /* если фильтр с id="filterId" находится в файле filter.svg*/</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="word--red">none</td>
+						<td>
+							<p>Значение по умолчанию. Означает отсутствие эффекта.</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="word--red">initial</td>
+						<td>
+							<p>Устанавливает это свойство в значение по умолчанию.</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="word--red">inherit</td>
+						<td>
+							<p>Наследует значение свойства от родительского элемента.</p>
+						</td>
+					</tr>
+				</table>
+
+				<h3 class="charter__subtitle">Пример CSS-фильтров</h3>
+				<script async src="https://jsfiddle.net/afwvyvx9/7/embed/html,css,result/dark/"></script>
+			</div>
+
+			<div class="content__item charter">
+				<h2 class="charter__title">Форма обратной связи</h2>
+				<div class="charter__text">
+					<p class="charter__paragraph">Для реализации высплывающих окон мы используем плагин "BlockUI"</p>
+					<a href="#callback" class="callback__btn js-show-popup">Заказать звонок</a>
+					<div id="callback" class="callback hidden-block">
+						<div class="callback__wrapper">
+							<a href="#" class="callback__close">+</a>
+							<div class="callback__container">
+								<form action="/" class="callback__form">
+									<div class="callback__input-wrap">
+										<label for="callback__name" class="callback__label">Ваше имя</label>
+										<input type="text" id="callback__name" class="callback__input">
+									</div>
+									<div class="callback__input-wrap">
+										<label for="callback__phone" class="callback__label">Ваш телефон</label>
+										<input type="text" id="callback__phone" class="callback__input" placeholder="+7 (***) ***-**-**">
+									</div>
+									<div class="callback__input-wrap">
+										<input type="submit" id="callback__submit" class="callback__submit" value="Отправить">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content__item charter">
+				<h2 class="charter__title">AJAX</h2>
+				<div class="charter__text">
+					<p class="charter__paragraph">AJAX (аббревиатура от «Asynchronous Javascript And Xml») – технология обращения к серверу без перезагрузки страницы.</p>
+					<p class="charter__paragraph">За счет этого уменьшается время отклика и веб-приложение по интерактивности больше напоминает десктоп.</p>
+					<p class="charter__paragraph">Спомощью AJAX можно реализовывать элементы интерфейса, динамическую подгрузку данных, живой поиск и т.п. Технически, с помощью AJAX можно обмениваться любыми данными с сервером.</p>
+					<p class="charter__paragraph">Для реализации AJAX-запросов мы используем метод <span class="word--red">$.ajax</span> в библиотеке JQuery.</p>
+					<div class="ajax__text"></div>
+					<div class="ajax__btn" id="ajax__btn">Читать далее...</div>
+				</div>
+			</div>
+
+			<div class="content__item charter">
+				<h2 class="charter__title">Типовые элементы</h2>
+				<div class="charter__text">
+					<p class="charter__paragraph">В данном разделе приведены примеры элементов, которые наиболее часто встречаются при создании веб-страниц.</p>
+					<div class="charter__text">
+						<h3 class="charter__subtitle">Меню</h3>
+						<script async src="https://jsfiddle.net/w1nqrkg9/15/embed/html,css,result/dark/"></script>
+					</div>
+					<div class="charter__text">
+						<h3 class="charter__subtitle">Карточка товара</h3>
+						<script async src="https://jsfiddle.net/gmaxb1qn/287/embed/html,css,result/dark/"></script>
+					</div>
+					<div class="charter__text">
+						<h3 class="charter__subtitle">Список товаров</h3>
+						<script async src="https://jsfiddle.net/gmaxb1qn/288/embed/html,css,result/dark/"></script>
+					</div>
+					<div class="charter__text">
+						<h3 class="charter__subtitle">Пагинация</h3>
+						<script async src="https://jsfiddle.net/jdr4cn1w/9/embed/html,css,result/dark/"></script>
+					</div>
+					<div class="charter__text">
+						<h3 class="charter__subtitle">Добавление файла</h3>
+						<script async src="https://jsfiddle.net/767jpqeh/6/embed/html,css,result/dark/"></script>
+					</div>
+					<div class="charter__text">
+						<h3 class="charter__subtitle">Кнопки</h3>
+						<script async src="https://jsfiddle.net/cwLbhmrk/10/embed/html,css,result/dark/"></script>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>

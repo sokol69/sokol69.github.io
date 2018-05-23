@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Source sans pro';
+  src: url("../fonts/sourcesanspro.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Source sans pro';
+  src: url("../fonts/sourcesansprobolditalic.ttf");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?6su9j0");
+  src: url("../fonts/icomoon.eot?6su9j0#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?6su9j0") format("truetype"), url("../fonts/icomoon.woff?6su9j0") format("woff"), url("../fonts/icomoon.svg?6su9j0#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
