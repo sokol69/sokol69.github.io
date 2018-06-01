@@ -148,7 +148,7 @@ td {
   max-width: 100%; }
 
 .SumoSelect .CaptionCont.SlectBox.clicked {
-  border-color: #069edb;
+  border-color: #A7CF40;
   -webkit-border-bottom-right-radius: 0;
   border-bottom-right-radius: 0;
   -webkit-border-bottom-left-radius: 0;
@@ -160,7 +160,7 @@ td {
   transform: rotate(180deg); }
 
 .SumoSelect:hover .CaptionCont {
-  border-color: #069edb; }
+  border-color: #A7CF40; }
 
 .SumoSelect:focus .CaptionCont {
   border-color: #bfd4eb; }
@@ -202,7 +202,7 @@ td {
 .SumoSelect .CaptionCont label i:after {
   position: absolute;
   left: 2px;
-  color: #099fdb;
+  color: red;
   top: 18px;
   content: "\33";
   font-family: "icomoon";
@@ -246,6 +246,7 @@ td {
   background: none; }
 
 .SumoSelect .optWrapper .options li label {
+  width: 95%;
   padding-left: 15px;
   padding-bottom: 6px;
   padding-top: 6px;
@@ -255,12 +256,13 @@ td {
   padding-right: 30px;
   line-height: 19px;
   cursor: pointer;
-  -webkit-transition: color 0.24s;
-  -o-transition: color 0.24s;
-  transition: color 0.24s; }
+  -webkit-transition: all 0.24s;
+  -o-transition: all 0.24s;
+  transition: all 0.24s; }
 
 .SumoSelect .optWrapper .options li label:hover {
-  color: #0188e5; }
+  color: #0188e5;
+  background-color: lightgray; }
 
 .SumoSelect .optWrapper .options li:before {
   content: none; }
@@ -284,7 +286,7 @@ td {
 
 .SumoSelect .optWrapper.open {
   top: 42px;
-  border: 1px solid #069edb;
+  border: 1px solid #A7CF40;
   border-top: 0;
   -webkit-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -293,7 +295,7 @@ td {
 
 .SumoSelect .jspDrag {
   width: 12px;
-  background-color: #ed1a3b;
+  background-color: #A7CF40;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   border: 0;

@@ -143,7 +143,7 @@ $(document).on('click', '.js-show-popup', function(e){
 			textAlign: 'left',
 		},
 			overlayCSS: {
-				backgroundColor: 'rgba(36,27,73,0.9)',
+				backgroundColor: 'rgba(155,155,155,0.9)',
 				'cursor': 'default'
 		},
 		focusInput: false
