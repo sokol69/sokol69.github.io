@@ -57,7 +57,8 @@ if ($('.js-slider__list').length > 0 ) {
 		arrows: true,
 		prevArrow: '<button type="button" class="btn-slide btn-prev"></button>',
 		nextArrow: '<button type="button" class="btn-slide btn-next"></button>',
-		infinite: true
+		infinite: true,
+		rtl: true
 	});
 };
 
@@ -196,4 +197,20 @@ $('#ajax__btn').click(function() {
 			$('#ajax__btn').css('display', 'none');
 		}
 	});
+});
+
+/*card list*/
+
+$(document).on('click','.js-changeCatalogView', function(e){
+	e.preventDefault();
+	var $this = $(this),
+  		thisData = $this.data('view');
+      
+      $('.js-catalogList').attr('data-view', thisData);
+      
+      $('.js-changeCatalogView').each(function(){
+      	$(this).removeClass('active');
+      });
+      
+      $(this).addClass('active');
 });

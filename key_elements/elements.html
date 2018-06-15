@@ -59,7 +59,7 @@
 			<h2 class="charter__title">2. Слайдер</h2>
 			<div class="charter__text">
 				<p class="charter__paragraph">Для реализации слайдера мы используем плагин "SlickSlider"</p>
-				<ul class="js-slider__list slider__list">
+				<ul class="js-slider__list slider__list" dir="rtl">
 					<li class="slider__item">
 						<img src="img/slide-1.jpg" alt="Slide" class="slider__img">
 					</li>
@@ -123,7 +123,7 @@
 			<div class="charter__text">
 				<p class="charter__paragraph">Всплывающие подсказки можно реализовать двумя способами:</p>
 				<ol class="list">
-					<li class="list__item">Через дата атрибут. Записываем в <span class="word--red">data-tooltip="example"</span> нужную информацию и показываем через псевдоэлементы <span class="word--red">::before, ::after</span>.
+					<li class="list__item tooltip__li">Через дата атрибут. Записываем в <span class="word--red">data-tooltip="example"</span> нужную информацию и показываем через псевдоэлементы <span class="word--red">::before, ::after</span>.
 						<main>
 							<div>
 								<span tooltip="I'm up above it!">Up</span>
@@ -137,8 +137,21 @@
 							</div>
 						</main>
 					</li>
-					<li class="list__item">Создаем один блок с информацией и подсказкой и с помощью опасити скрываем подсказку и при наведении показываем.
-						<script async src="https://jsfiddle.net/skuxvdde/1/embed/html,css,result/dark/"></script>
+					<li class="list__item tooltip__li">Создаем один блок с информацией и подсказкой и с помощью опасити скрываем подсказку и при наведении показываем.
+						<div class="tooltip__wrap">
+							<div class="tooltip__container">
+								<div class="tooltip__item tooltip__item--1">элемент с посказкой</div>
+								<div class="tooltipHint__item hint hint--1">подсказка №1</div>
+							</div>
+							<div class="tooltip__container">
+								<div class="tooltip__item tooltip__item--2">второй</div>
+								<div class="tooltipHint__item hint hint--2">подсказка №2</div>
+							</div>
+							<div class="tooltip__container">
+								<div class="tooltip__item tooltip__item--3">и еще один</div>
+								<div class="tooltipHint__item hint hint--3">подсказка №3</div>
+							</div>
+						</div>
 					</li>
 				</ol>
 				
@@ -177,7 +190,24 @@
 				<p class="charter__paragraph">CSS3-переходы позволяют анимировать исходное значение CSS-свойства на новое значение с течением времени, управляя скоростью смены значений свойств. Большинство свойств меняют свои значения за 16 миллисекунд, поэтому рекомендуемое время стандартного перехода — <span class="word--red">200ms</span>.</p>
 				<p class="charter__paragraph">Смена свойств происходит при наступлении определенного события, которое описывается соответствующим псевдоклассом. Чаще всего используется псевдокласс <span class="word--red">:hover</span>. Данный псевдокласс не работает на мобильных устройствах, таких как iPhone или Android. Универсальным решением, работающим в настольных и мобильных браузерах, будет обработка событий с помощью JavaScript (например, переключение классов при клике).</p>
 				<p class="charter__paragraph">Переходы применяются ко всем элементам, а также к псевдоэлементам <span class="word--red">:before</span> и <span class="word--red">:after</span>. Для задания всех свойств перехода обычно используют краткую запись свойства   <span class="word--red">transition</span>.</p>
-				<script async src="https://jsfiddle.net/afwvyvx9/8/embed/html,css,result/dark/"></script>
+				<p class="charter__paragraph">Примеры:</p>
+				<ul class="list effects__list">
+					<li class="list__item effects__item">
+						<a href="#" class="effects__link effects--1">Эффект наведения №1</a>
+					</li>
+					<li class="list__item effects__item">
+						<a href="#" class="effects__link effects--2">Эффект наведения №2</a>
+					</li>
+					<li class="list__item effects__item">
+						<a href="#" class="effects__link effects--3">Эффект наведения №3</a>
+					</li>
+					<li class="list__item effects__item">
+						<a href="#" class="effects__link effects--4">Эффект наведения №4</a>
+					</li>
+					<li class="list__item effects__item">
+						<a href="#" class="effects__link effects--5">Эффект наведения №5</a>
+					</li>
+				</ul>
 			</div>
 			<div class="charter__text">
 				<h3 class="charter__subtitle">CSS3-фильтры</h3>
@@ -354,27 +384,296 @@
 					<p class="charter__paragraph">В данном разделе приведены примеры элементов, которые наиболее часто встречаются при создании веб-страниц.</p>
 					<div class="charter__text">
 						<h3 class="charter__subtitle">Меню</h3>
-						<script async src="https://jsfiddle.net/w1nqrkg9/16/embed/html,css,result/dark/"></script>
+						<script async src="https://jsfiddle.net/w1nqrkg9/17/embed/html,css,result/dark/"></script>
 					</div>
 					<div class="charter__text">
 						<h3 class="charter__subtitle">Карточка товара</h3>
-						<script async src="https://jsfiddle.net/2b1Ldsyp/12/embed/html,css,result/dark/"></script>
+						<div class="card">
+							<div class="card__title">АКЦИЯ</div>
+							<div class="card__img-wrap">
+								<img src="https://static.netiq.biz/prevs/couponsl/wikium-ru.png" alt="card" class="card__img">
+							</div>
+							<div class="card__name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+							<div class="card__stars-wrap">
+								<span class="card__star icon-star-full"></span>
+								<span class="card__star icon-star-full"></span>
+								<span class="card__star icon-star-full"></span>
+								<span class="card__star icon-star-full"></span>
+								<span class="card__star card__star--last icon-star-full"></span>
+							</div>
+							<div class="card__reviewsCount">14</div>
+							<div class="card__price">29 999 &#x20bd;</div>
+							<div class="card__oldprice">31 999 &#x20bd;</div>
+							<div class="card__buy">КУПИТЬ</div>
+						</div>
 					</div>
 					<div class="charter__text">
 						<h3 class="charter__subtitle">Список товаров</h3>
-						<script async src="https://jsfiddle.net/2b1Ldsyp/13/embed/html,css,result/dark/"></script>
+
+						<div class="catalogList js-catalogList" data-view="tile">
+							<div class="catalogList__changeview">
+							  <a href="javascript:void(0);" data-view="tile" class="catalogList__link js-changeCatalogView active">Плитка</a>
+							  <a href="javascript:void(0);" data-view="list" class="catalogList__link js-changeCatalogView">Список</a>
+							  <a href="javascript:void(0);" data-view="table" class="catalogList__link js-changeCatalogView">Таблица</a>
+							</div>
+
+							<div class="card__list">
+								<div class="card">
+									<div class="card-table__left">
+										<div class="card__title">АКЦИЯ</div>
+										<div class="card__img-wrap">
+											<img src="https://static.netiq.biz/prevs/couponsl/wikium-ru.png" alt="card" class="card__img">
+										</div>
+									</div>
+									<div class="card-table__right">
+										<div class="card__name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+										<div class="card__info">
+											<div class="card__article">Артикул: 256789</div>
+											<div class="card__rating">
+												<div class="card__stars-wrap">
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star card__star--last icon-star-full"></span>
+												</div>
+												<div class="card__reviewsCount">14</div>
+											</div>
+									</div>
+									<div class="card__conditions">
+										<div class="card__period">* акция действует до&nbsp;31.06.2018</div>
+										<div class="card__prices">
+											<div class="card__price">29 999 &#x20bd;</div>
+											<div class="card__oldprice">31 999 &#x20bd;</div>
+										</div>
+									</div>
+									<div class="card__buy">КУПИТЬ</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-table__left">
+									<div class="card__title">АКЦИЯ</div>
+									<div class="card__img-wrap">
+										<img src="https://static.netiq.biz/prevs/couponsl/wikium-ru.png" alt="card" class="card__img">
+									</div>
+								</div>
+								<div class="card-table__right">
+									<div class="card__name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+									<div class="card__info">
+										<div class="card__article">Артикул: 256789</div>
+										<div class="card__rating">
+											<div class="card__stars-wrap">
+												<span class="card__star icon-star-full"></span>
+												<span class="card__star icon-star-full"></span>
+												<span class="card__star icon-star-full"></span>
+												<span class="card__star icon-star-full"></span>
+												<span class="card__star card__star--last icon-star-full"></span>
+											</div>
+											<div class="card__reviewsCount">14</div>
+										</div>
+									</div>
+									<div class="card__conditions">
+										<div class="card__period">* акция действует до&nbsp;31.06.2018</div>
+										<div class="card__prices">
+											<div class="card__price">29 999 &#x20bd;</div>
+											<div class="card__oldprice">31 999 &#x20bd;</div>
+										</div>
+									</div>
+									<div class="card__buy">КУПИТЬ</div>
+								</div>
+							</div>
+						<div class="card">
+								<div class="card-table__left">
+									<div class="card__title">АКЦИЯ</div>
+									<div class="card__img-wrap">
+										<img src="https://static.netiq.biz/prevs/couponsl/wikium-ru.png" alt="card" class="card__img">
+									</div>
+								</div>
+								<div class="card-table__right">
+									<div class="card__name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+									<div class="card__info">
+										<div class="card__article">Артикул: 256789</div>
+										<div class="card__rating">
+											<div class="card__stars-wrap">
+												<span class="card__star icon-star-full"></span>
+												<span class="card__star icon-star-full"></span>
+												<span class="card__star icon-star-full"></span>
+												<span class="card__star icon-star-full"></span>
+												<span class="card__star card__star--last icon-star-full"></span>
+											</div>
+											<div class="card__reviewsCount">14</div>
+										</div>
+									</div>
+									<div class="card__conditions">
+										<div class="card__period">* акция действует до&nbsp;31.06.2018</div>
+										<div class="card__prices">
+											<div class="card__price">29 999 &#x20bd;</div>
+											<div class="card__oldprice">31 999 &#x20bd;</div>
+										</div>
+									</div>
+									<div class="card__buy">КУПИТЬ</div>
+								</div>
+							</div>
+							<div class="card">
+									<div class="card-table__left">
+										<div class="card__title">АКЦИЯ</div>
+										<div class="card__img-wrap">
+											<img src="https://static.netiq.biz/prevs/couponsl/wikium-ru.png" alt="card" class="card__img">
+										</div>
+									</div>
+									<div class="card-table__right">
+										<div class="card__name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+										<div class="card__info">
+											<div class="card__article">Артикул: 256789</div>
+											<div class="card__rating">
+												<div class="card__stars-wrap">
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star card__star--last icon-star-full"></span>
+												</div>
+												<div class="card__reviewsCount">14</div>
+											</div>
+										</div>
+										<div class="card__conditions">
+											<div class="card__period">* акция действует до&nbsp;31.06.2018</div>
+											<div class="card__prices">
+												<div class="card__price">29 999 &#x20bd;</div>
+												<div class="card__oldprice">31 999 &#x20bd;</div>
+											</div>
+										</div>
+										<div class="card__buy">КУПИТЬ</div>
+									</div>
+								</div>
+							<div class="card">
+									<div class="card-table__left">
+										<div class="card__title">АКЦИЯ</div>
+										<div class="card__img-wrap">
+											<img src="https://static.netiq.biz/prevs/couponsl/wikium-ru.png" alt="card" class="card__img">
+										</div>
+									</div>
+									<div class="card-table__right">
+										<div class="card__name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+										<div class="card__info">
+											<div class="card__article">Артикул: 256789</div>
+											<div class="card__rating">
+												<div class="card__stars-wrap">
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star card__star--last icon-star-full"></span>
+												</div>
+												<div class="card__reviewsCount">14</div>
+											</div>
+										</div>
+										<div class="card__conditions">
+											<div class="card__period">* акция действует до&nbsp;31.06.2018</div>
+											<div class="card__prices">
+												<div class="card__price">29 999 &#x20bd;</div>
+												<div class="card__oldprice">31 999 &#x20bd;</div>
+											</div>
+										</div>
+										<div class="card__buy">КУПИТЬ</div>
+									</div>
+								</div>
+							<div class="card">
+									<div class="card-table__left">
+										<div class="card__title">АКЦИЯ</div>
+										<div class="card__img-wrap">
+											<img src="https://static.netiq.biz/prevs/couponsl/wikium-ru.png" alt="card" class="card__img">
+										</div>
+									</div>
+									<div class="card-table__right">
+										<div class="card__name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+										<div class="card__info">
+											<div class="card__article">Артикул: 256789</div>
+											<div class="card__rating">
+												<div class="card__stars-wrap">
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star icon-star-full"></span>
+													<span class="card__star card__star--last icon-star-full"></span>
+												</div>
+												<div class="card__reviewsCount">14</div>
+											</div>
+										</div>
+										<div class="card__conditions">
+											<div class="card__period">* акция действует до&nbsp;31.06.2018</div>
+											<div class="card__prices">
+												<div class="card__price">29 999 &#x20bd;</div>
+												<div class="card__oldprice">31 999 &#x20bd;</div>
+											</div>
+										</div>
+										<div class="card__buy">КУПИТЬ</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="charter__text">
 						<h3 class="charter__subtitle">Пагинация</h3>
-						<script async src="https://jsfiddle.net/jdr4cn1w/10/embed/html,css,result/dark/"></script>
+						<div class="paggination" style="width: 395px;">
+							<ul class="paggination__list">
+								<li class="paggination__item"><a href="#" class="paggination__link arrow prev">&#8592;</a></li>
+								<li class="paggination__item"><a href="#" class="paggination__link">1</a></li>
+								<li class="paggination__item"><span class="paggination__link dots">...</span></li>
+								<li class="paggination__item"><a href="#" class="paggination__link">4</a></li>
+								<li class="paggination__item"><span class="paggination__link current">5</span></li>
+								<li class="paggination__item"><a href="#" class="paggination__link">6</a></li>
+								<li class="paggination__item"><span class="paggination__link dots">...</span></li>
+								<li class="paggination__item"><a href="#" class="paggination__link">999</a></li>
+								<li class="paggination__item"><a href="#" class="paggination__link arrow next">&#8594;</a></li>
+							</ul>
+						</div>
 					</div>
 					<div class="charter__text">
 						<h3 class="charter__subtitle">Добавление файла</h3>
-						<script async src="https://jsfiddle.net/767jpqeh/8/embed/html,css,result/dark/"></script>
+						<div class="uploadBlock">
+							<label class="uploadFile">
+								<input type="file" name="">
+								<span>Загрузить файл...</span>
+							</label>
+							<div class="uploadFile__document">
+								<span class="uploadFile__title">Загруженные файлы:</span>
+								<div class="uploadFile__item">
+								<span class="uploadFile__item-text">some_document.doc</span>
+								<a href="javascript:void(0);" class="uploadFile__item-close"></a>
+								</div>
+								<div class="uploadFile__item">
+								<span class="uploadFile__item-text">some_document_longnameeeee.doc</span>
+								<a href="javascript:void(0);" class="uploadFile__item-close"></a>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="charter__text">
 						<h3 class="charter__subtitle">Кнопки</h3>
-						<script async src="https://jsfiddle.net/cwLbhmrk/13/embed/html,css,result/dark/"></script>
+						<ul class="list button__list">
+							<li class="list__item button__item">
+								<a href="#" class="button button--buy">Купить</a>
+							</li>
+							<li class="list__item button__item">
+								<a href="#" class="button button--basket">В корзину</a>
+							</li>
+							<li class="list__item button__item">
+								<a href="#" class="button button--in">Подробнее</a>
+							</li>
+							<li class="list__item button__item">
+								<a href="#" class="button button--enter">Войти</a>
+							</li>
+							<li class="list__item button__item">
+								<a href="#" class="button button--sub">Подписаться</a>
+							</li>
+							<li class="list__item button__item">
+								<a href="#" class="button button--download">Скачать</a>
+							</li>
+							<li class="list__item button__item">
+								<a href="#" class="button button--order">Заказать</a>
+							</li>
+						</ul>
 					</div>
 					
 				</div>
