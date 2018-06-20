@@ -37,9 +37,8 @@ if ($('.js-select').length > 0) {
 					contentWidth: '0px',
 					verticalDragMinHeight : 12,
 					verticalDragMaxHeight: 12,
-					mouseWheelSpeed: 50,
-					animateScroll: true,
-					animateDuration: 100
+					mouseWheelSpeed: 20,
+					animateScroll: true
 				});
 			} 
 		});
@@ -157,7 +156,6 @@ $(document).on('click', '.js-show-popup', function(e){
 /*CLOSE FORM*/
 $(document).on('click touchstart','.js-close-form', function(e) {
 	$.unblockUI();
-	$('body').removeClass('hidden-overflow');
 	$('.popUpForm.visible').removeClass('visible');
 	blockUiOpen = false;
 	e.preventDefault();
@@ -168,7 +166,6 @@ $(document).on('click touchstart', function(e) {
 	if (!$target.is('input')) {
 		if (blockUiOpen && ($target.closest('.popUpForm').length === 0)) {
 			$.unblockUI();
-			$('body').removeClass('hidden-overflow');
 			$('.popUpForm.visible').removeClass('visible');
 			blockUiOpen = false;
 			e.preventDefault();
@@ -178,8 +175,7 @@ $(document).on('click touchstart', function(e) {
 
 $(document).keyup(function(e) {
 	if (e.keyCode == 27) { 
-	$.unblockUI();
-		$('body').removeClass('hidden-overflow');	
+		$.unblockUI();
 		$('.popUpForm.visible').removeClass('visible');
 		blockUiOpen = false;
 	}

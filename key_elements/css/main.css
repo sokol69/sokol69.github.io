@@ -490,7 +490,8 @@ td {
   background-color: lightsteelblue;
   color: #000;
   -webkit-box-shadow: 0px -4px 18px -3px #ccc;
-          box-shadow: 0px -4px 18px -3px #ccc; }
+          box-shadow: 0px -4px 18px -3px #ccc;
+  cursor: auto; }
 
 /* START TOOLTIP STYLES */
 [tooltip] {
@@ -923,10 +924,19 @@ main span {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg); }
   .callback__wrapper {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 350px;
     margin: 0 auto;
-    border: 3px solid #A7CF40; }
+    border: 3px solid #A7CF40;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 0; }
   .callback__container {
     margin: 5px;
     padding: 20px 20px 0px 20px;
@@ -956,6 +966,9 @@ main span {
     -webkit-border-radius: 3px;
             border-radius: 3px;
     cursor: pointer; }
+
+.visible .callback__wrapper {
+  opacity: 1; }
 
 /*AJAX*/
 .ajax__btn {
@@ -1080,6 +1093,9 @@ main span {
       background-color: darkorange; }
 
 /*CARD LIST*/
+.product-table {
+  display: none; }
+
 .catalogList {
   padding-left: 20px;
   padding-right: 20px;
@@ -1114,10 +1130,10 @@ main span {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
   .card__list .card {
     margin-right: 12px;
     margin-left: 12px;
@@ -1129,26 +1145,20 @@ main span {
 .card__period {
   display: none; }
 
-.catalogList[data-view='list'] .card__list {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.catalogList[data-view='table'] .card {
+.catalogList[data-view='list'] .card {
   width: 80%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-  .catalogList[data-view='table'] .card__name {
+  .catalogList[data-view='list'] .card__list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .catalogList[data-view='list'] .card__name {
     padding-top: 0; }
-  .catalogList[data-view='table'] .card__info {
+  .catalogList[data-view='list'] .card__info {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1157,7 +1167,7 @@ main span {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .catalogList[data-view='table'] .card__rating {
+  .catalogList[data-view='list'] .card__rating {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1166,12 +1176,12 @@ main span {
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-  .catalogList[data-view='table'] .card__stars-wrap {
+  .catalogList[data-view='list'] .card__stars-wrap {
     width: auto; }
-  .catalogList[data-view='table'] .card__reviewsCount {
+  .catalogList[data-view='list'] .card__reviewsCount {
     width: auto;
     padding-left: 15px; }
-  .catalogList[data-view='table'] .card__conditions {
+  .catalogList[data-view='list'] .card__conditions {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1184,29 +1194,29 @@ main span {
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
             align-items: flex-end; }
-  .catalogList[data-view='table'] .card__period {
+  .catalogList[data-view='list'] .card__period {
     display: inline-block;
     padding-bottom: 3px;
     font-size: 12px;
     color: crimson; }
-  .catalogList[data-view='table'] .card__prices {
+  .catalogList[data-view='list'] .card__prices {
     padding-top: 15px;
     text-align: right; }
-  .catalogList[data-view='table'] .card__price {
+  .catalogList[data-view='list'] .card__price {
     width: auto; }
-  .catalogList[data-view='table'] .card__oldprice {
+  .catalogList[data-view='list'] .card__oldprice {
     width: auto; }
-  .catalogList[data-view='table'] .card__buy {
+  .catalogList[data-view='list'] .card__buy {
     width: 50%;
     margin-left: auto;
     margin-right: auto; }
 
-.catalogList[data-view='table'] .card__article {
+.catalogList[data-view='list'] .card__article {
   display: inline-block;
   font-size: 14px;
   color: lightgray; }
 
-.catalogList[data-view='table'] .card-table__right {
+.catalogList[data-view='list'] .card-table__right {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1221,6 +1231,37 @@ main span {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 15px; }
+
+.catalogList[data-view='table'] .card__list {
+  display: none; }
+
+.catalogList[data-view='table'] .product-table {
+  display: table; }
+  .catalogList[data-view='table'] .product-table td {
+    border-color: transparent;
+    padding: 14px; }
+  .catalogList[data-view='table'] .product-table__head {
+    background-color: crimson;
+    border: 2px solid crimson; }
+  .catalogList[data-view='table'] .product-table__img {
+    width: 200px; }
+  .catalogList[data-view='table'] .product-table__name {
+    width: 180px;
+    text-align: center; }
+  .catalogList[data-view='table'] .product-table__oldprice-td {
+    text-align: center; }
+  .catalogList[data-view='table'] .product-table__price-td {
+    text-align: center; }
+  .catalogList[data-view='table'] .product-table__oldprice {
+    display: inline-block;
+    width: 100%; }
+  .catalogList[data-view='table'] .product-table__price {
+    display: inline-block;
+    width: 100%; }
+  .catalogList[data-view='table'] .product-table__row {
+    border-left: 2px solid lightgrey;
+    border-right: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey; }
 
 /*PAGINATION*/
 .paggination {
