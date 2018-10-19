@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../key_elements/css/main.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>WebGL</title>
+</head>
+<body>
+	<header class="header">
+		<h1 class="header__title">WebGL</h1>
+	</header>
+
+	<div class="content">
+		<div class="content__item charter">
+			<h2 class="charter__title">Знакомство</h2>
+			<div class="charter__text">
+				<h3 class="charter__subtitle">WebGL</h3>
+				<p class="charter__paragraph">Web-based Graphics Library - это контекст элемента canvas HTML, который обеспечивает API 3D графики без использования плагинов. WebGL исполняется как элемент HTML5 и поэтому является полноценной частью объектной модели документа браузера. За счёт использования низкоуровневых средств поддержки OpenGL, часть кода на WebGL может выполняться непосредственно на видеокартах.</p>
+				<p class="charter__paragraph">Первая спецификация была выпущена 3 марта 2011 года. Современная версия 2.0 (несовместима с версией 1.0) доступна с 27 февраля 2017 года. <a href="https://caniuse.com/#search=webgl" target="_blanc">Браузерная поддержка</a></p>
+				<script async src="//jsfiddle.net/21s3ncay/embed/js/dark/"></script>
+				<h3 class="charter__subtitle">ThreeJS</h3>
+				<p class="charter__paragraph">ThreeJS - библиотека JavaScript, используемая для создания и отображения анимированной 3D графики при разработке веб-приложений. Её работа основана на возможностях WebGL. ThreeJS  выполняет всю низкоуровневую работу с WebGL и предоставляет набор классов с понятным интерфейсом.</p>
+				<h3 class="charter__subtitle">Основные понятия</h3>
+				<p class="charter__paragraph"><span class="word--red"> Рендер </span> - сущность, отображающая на cnvas выбранную сцену с выбранной камеры.</p>
+				<p class="charter__paragraph"> <span class="word--red"> Сцена </span> - 3d пространство, в котором рапологаются источники света и элементы - меши.</p>
+				<p class="charter__paragraph"> <span class="word--red"> Камера </span> - точка обзора сцены с определенными характеристиками.</p>
+				<p class="charter__paragraph"> <span class="word--red"> Источник света </span> - элемент, создающий освещение сцены (м.б. рассеяным, точечным, направленным и т.д.). </p>
+				<p class="charter__paragraph"> <span class="word--red"> Меш </span> - элемент сцены, который состоит из геометрии и материала.</p>
+				<p class="charter__paragraph"> <span class="word--red"> Геометрия </span> - набор вершин, которые при отоброжении соединяются графическими примитивами.</p>
+				<p class="charter__paragraph"> <span class="word--red"> Материал </span> - способ отображения и внешний вид элемента.</p>
+				<p class="charter__paragraph"> <span class="word--red"> Текстура </span> - изображение, которое может использоватся в рамках материала для задания внешнего вида обьекта.</p>
+				<h3 class="charter__subtitle">Иерархия отображения</h3>
+				<div class="imgContainer">
+					<img src="img/sheme.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="content__item charter">
+			<h2 class="charter__title">Пример и код</h2>
+			<div class="charter__text">
+				<div id="exampleContainer">
+					<a href="canvas/canvas.html" target="_blanc">Посмотреть пример</a>
+					<script async src="//jsfiddle.net/21s3ncay/1/embed/js/dark/"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/three.js"></script>
+	<script src="./js/OrbitControls.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
