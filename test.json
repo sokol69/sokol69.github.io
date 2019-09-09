@@ -11,5 +11,10 @@
       "balance": "$ 5,204,305.25",
       "percentage": "100%"
     }
+  ],
+  "sponsors" : [
+    { "value": 1, "label": "All sponsors" },
+    { "value": 2, "label": "Sponsor 2" },
+    { "value": 3, "label": "Sponsor 3" }
   ]
 }
