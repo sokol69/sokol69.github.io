@@ -1,3 +1,15 @@
 {
-  "key": "value"
+  "data" : [
+    {
+      "key": 3,
+      "investor": "John, Brown",
+      "entityType": "TRUST",
+      "previousBalance": "$ 5,149,305.34",
+      "changeInValue": "$ 55,999.34",
+      "contribution": "",
+      "withdrawal": "",
+      "balance": "$ 5,204,305.25",
+      "percentage": "100%"
+    }
+  ]
 }
